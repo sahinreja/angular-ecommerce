@@ -125,14 +125,14 @@ router.post('/signup', (req, res) => {
                             port: 587,
                             secure: false, // true for 465, false for other ports
                             auth: {
-                                user: 'sahinreja511@gmail.com', // generated ethereal user
-                                pass: 'sahin@1997', // generated ethereal password
+                                user: 'sender@gmail.com', // generated ethereal user
+                                pass: 'password', // generated ethereal password
                             },
                         });
 
                         // send mail with defined transport object
                         let info = await transporter.sendMail({
-                            from: '"Team 5Star" <sahinreja511@gmail.com>', // sender address
+                            from: '"Team 5Star" <sender@gmail.com>', // sender address
                             to: userData.email, // list of receivers
                             subject: "Registration Message", // Subject line
                             //   text: "Hello world?", // plain text body

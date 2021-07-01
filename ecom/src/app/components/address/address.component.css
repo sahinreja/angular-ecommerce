@@ -1,0 +1,16 @@
+#intro{
+    height: 100%;
+    width:100%;
+    background: #de6161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161);
+}
+.card{
+    box-shadow: 0 5px 25px #dedede;   
+}
+@media (max-width:768px){
+    #intro{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,69 @@
+<section id="intro">
+    <div class="container" style="padding-top: 100px;">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h3 class="text-center mt-3" *ngIf="!this.productService.getTotalPrice()">Your cart is empty. Add item to
+                    cart first!
+                    <br>
+                    <p><a routerLink="/products">Click Here to shop</a></p>
+                </h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-collapse table-primary table-hover shadow"
+                        *ngIf="this.productService.getTotalPrice()">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th></th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of  this.productService.cartProducts">
+                                <td>
+                                    <img src="../../../assets/home/{{item.image}}" class="img-fluid" width="80" alt="">
+                                </td>
+                                <td>{{item.title}}</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm"
+                                        (click)="this.productService.dcrement(item.title)">
+                                        <!-- <i class="fas fa-arrow-down"></i> -->
+                                        -
+                                    </button>
+                                    {{item.inCart}}
+                                    <button class="btn btn-success btn-sm"
+                                        (click)="this.productService.increment(item.title)">
+                                        <!-- <i class="fas fa-arrow-up"></i> -->
+                                        +
+                                    </button>
+                                </td>
+                                <td>{{item.price * item.inCart | currency:'INR'}}</td>
+                                <td><button mat-raised-button color="accent"
+                                        (click)="this.productService.removeItem(item.title)">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td style="font-weight: bold;">Total</td>
+                                <td style="font-weight:bold ;" colspan="3">{{this.productService.getTotalPrice() | currency:'INR'}}</td>
+                                <!-- <td></td> -->
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button mat-raised-button color="primary" (click)="this.productService.checkAddress()" >Procced to CheckOut</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

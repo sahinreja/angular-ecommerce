@@ -1,0 +1,11 @@
+#intro{
+    height: auto;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+@media (max-width:768px){
+    #intro{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+}

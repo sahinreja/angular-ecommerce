@@ -1,0 +1,25 @@
+<section id="intro">
+    <div class="container" style="padding-top: 55px;">
+        <div class="row">
+            
+            <div class="col-md-5 col-10 mx-auto">
+                <div class="card rounded-0" style="background-color: #fcfcfc;box-shadow: 0 5px 12px #cac7c7;display: flex;align-items: center;" >
+                        <img src="{{this.productsService.user.imagePath}}" class="profile_image" style="height: 250px;width: 250px;border-radius: 50%;position: relative;" alt="">
+                        <button class="btn btn-success btn-sm upload_btn" style="position: absolute;top: 230px;" (click)="openUpload()" >Upload Image</button>
+                    <!-- <div class="card-header"> -->
+                        <br>
+                        <h3><span style="text-transform: uppercase;font-weight: bold;">{{this.productsService.user.name}}</span></h3>
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <p>Phone Number - {{this.productsService.user.phone}}</p>
+                        <p>Email Address - {{this.productsService.user.email}}</p>
+                        <p>Gender - {{this.productsService.user.gender}}</p>
+                        <p>Date of Birth : {{this.productsService.user.dob}}</p>
+                        <p>Addres - {{this.productsService.user.address}}</p>
+                        <button mat-raised-button color="warn" style="float:right" (click)="openDialog()" >Edit Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

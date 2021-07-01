@@ -1,0 +1,44 @@
+<section id="intro">
+    <div class="container" style="padding-top: 6rem;margin-bottom:10rem;">
+        <div class="row">
+            <div class="col-md-5 col-10 mx-auto mt-5">
+                <div class="card rounded-0">
+                    <div class="card-header">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="card-body">
+                        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" novalidate>
+                            <mat-form-field class="full" appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input type="email" required ngModel #emailField="ngModel" email name="email" matInput
+                                    placeholder="Enter Email">
+                                <mat-hint *ngIf="emailField.touched && loginForm.value.email == ''">
+                                    <p class="text-danger">Email is required to login.</p>
+                                </mat-hint>
+                                <mat-hint *ngIf="emailField.errors?.email">
+                                    <p class="text-danger">Email is not valid</p>
+                                </mat-hint>
+                            </mat-form-field>
+                            <mat-form-field class="full" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input required ngModel #passwordField="ngModel" minlength="8" name="password"
+                                    type="password" matInput placeholder="Enter Password">
+                                <mat-hint *ngIf="passwordField.touched && loginForm.value.password== ''">
+                                    <p class="text-danger">Password is required to login.</p>
+                                </mat-hint>
+                            </mat-form-field>
+    
+                            <button mat-raised-button color="accent" [disabled]="!loginForm.valid">Login Now</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <h3 class="text-danger mt-3">
+                            {{errMessage}}
+                        </h3> -->
+                <!-- </mat-card-content>
+                </mat-card> -->
+                <p class="mt-2">New User? <a routerLink="/signup">Sign Up</a> </p>
+            </div>
+        </div>
+    </div>
+</section>

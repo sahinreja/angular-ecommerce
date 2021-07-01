@@ -1,0 +1,35 @@
+<section id="intro">
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <h3 class="text-center">You have ordered now!</h3>
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-header table-collapse table-success">
+                        <thead>
+                            <tr>
+                                <th>Order Id</th>
+                                <th [attr.colspan]="this.length">Order Item</th>
+                                <th >Total Price</th>
+                                <th>Delivery Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{this.order_id}}</td>
+                                <td *ngFor="let p of this.order_product">
+                                  <p>  {{p.title}}</p>
+                                </td>
+                                <td>
+                                    {{totalPrice | currency:'INR'}}
+                                </td>
+                                <td>
+                                    {{this.address.address}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

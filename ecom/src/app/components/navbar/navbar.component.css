@@ -1,0 +1,121 @@
+/* .navbar{
+    position:fixed;
+    top:0;
+    z-index:100;
+    width:100%;
+}
+a{
+    font-weight: bold;
+}
+.nav_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_item{
+    display: flex;
+}
+.logs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000; */
+    /* border-radius: 0.5rem; */
+/* }
+.logs li a{
+    color: #ffffff;
+}
+
+.example-container {
+    display: none;
+    width: 30vw;
+    height: 100vh;
+    overflow-x: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    z-index: 1000; */
+  /* }
+  .nav2{
+      display: none;
+  }
+  #sidebar{
+      height: 100vh;
+      position: absolute;
+      z-index: 10000;
+      background-color: #000;
+      width: 250px;
+      opacity: 1;
+      left: 0;
+      top: 0;
+      padding-top: 70px;
+  }
+  .sidebarClass{
+      width: 200px;
+      opacity: 1;
+  }
+  #sidebar ul{
+      list-style-type: none;
+      margin: 0!important;
+      padding: 0!important;
+      text-align: center;
+  } */
+  /* #sidebar ul .nav-item{ */
+      /* background-color: #ffffff!important; */
+      /* padding: 0; */
+      /* margin: 1rem 0; */
+      /* padding: 0.7rem 0; */
+  /* } */
+  /* #sidebar ul .nav-item:hover{
+      background-color: blueviolet;
+      color: #ffffff;
+  }
+  #sidebar ul .nav-item .nav-link{
+      color: #ffffff;
+  } */
+  /* #sidebar span{
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+@media (max-width:991px) {
+    .nav_link{
+        display: inline-block;
+    }
+    .logs{
+        display: inline-block;
+        background-color: white;
+    }
+    .logs li a{
+        color: #000;
+    }
+    .example-container{
+        display: block;
+    }
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+} */
+
+.nav-link{
+    color: #ffffff!important;
+    /* font-weight: bold; */
+}
+i{
+    color: #ffffff!important;
+}

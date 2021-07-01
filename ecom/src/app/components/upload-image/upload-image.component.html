@@ -1,0 +1,10 @@
+<h3>Upload Image</h3>
+<!-- <mat-dialog-content class="mat-typography"> -->
+<form [formGroup]="form" (ngSubmit)="submit()" >
+    <input type="file" class="form-control mb-3" (change)="selectedFile($event)" >
+    <button class="btn btn-primary" type="submit" mat-dialog-close >Upload Now</button>
+</form>
+<!-- </mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions> -->

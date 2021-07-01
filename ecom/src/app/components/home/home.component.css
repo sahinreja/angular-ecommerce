@@ -1,0 +1,230 @@
+/* .carousel-inner img{
+    background-size: cover;
+    background-position: center;
+}
+.height{
+    height: 110vh;
+    background-size: cover;
+}
+.carousel-item{
+    position: relative;
+}
+.item_1{
+    width:100%;
+    height:100vh;
+    background-color:rgb(0, 158, 207);
+    background-image:url('../../../assets/slider/blue-headphones.jpg');
+    background-position:100% 50%;
+    background-repeat:no-repeat;
+}
+.item_2{
+    width:100%;
+    height:100vh;
+    background-color:rgb(227, 162, 116);
+    background-image:url('../../../assets/slider/enjoy.jpg');
+    background-position:100% 50%;
+    background-repeat:no-repeat;
+}
+.item_3{
+    width:100%;
+    height:100vh;
+    background-color:rgb(247, 208, 107);
+    background-image:url('../../../assets/slider/happy-girl.jpg');
+    background-position:100% 50%;
+    background-repeat:no-repeat;
+}
+.carousel-caption{
+  position: absolute;
+  top: 190px;
+} */
+.c_text{
+    text-align: left;
+}
+.c_text h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.c_text h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.heading{
+    width: 100%;
+    margin-top: 40px;
+}
+mat-card{
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+mat-card:hover{
+    transform: scale(1.02);
+}
+.pName{
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    padding: 0!important;
+    margin-bottom: 2px;
+}
+.mat-content{
+    margin: 0;
+}
+.cards{
+    /* border-radius: 0!important; */
+    overflow: hidden;
+    border-left: 8px solid rgb(16, 192, 16);
+    /* border-bottom-left-radius: 15px solid rgb(16, 192, 16)!important; */
+    padding: 0.5rem!important;
+    /* box-shadow: 0 7px 15px gray!important; */
+    line-height: 1px!important;
+}
+.card h1{
+    font-weight: bold;
+}
+.mat-image{
+    height: 230px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.mat-image:hover{
+    transform:  scale(1.07);
+    overflow: hidden;
+}
+
+.head{
+    margin-top: -150px;
+    z-index: 100;
+}
+.cl-6{
+    background-color: rgb(0, 160, 224);
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    transition: all 0.5s ease-in-out;
+}
+.cl-6 h2{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.cl-6:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 17px #000;
+}
+.cl-6 img{
+    transition: all 0.5s ease-in-out;
+}
+.cl-6:hover img{
+    transform: translateX(18px) scale(1.5);
+}
+.last_img{
+    /* width: 313px; */
+    height: 175px!important;
+}
+.cd{
+    position: relative;
+    overflow: hidden;
+}
+.cd .all{
+    position: absolute;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-weight: bold;
+}
+.cd .all h1{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.cd img{
+    transition: all 1.2s ease-in-out;
+   
+}
+.cd:hover img{
+    transform: rotate(10deg) scale(1.5);
+}
+.card{
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 25px 25px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.fas.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  
+  .fas.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+    /* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+  /* background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); */
+  background-image: url('../../../assets/slider/slider3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  /* background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); */
+  background-image: url('../../../assets/slider/slider1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  /* background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); */
+  background-image: url('../../../assets/slider/slider2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+@media (max-width:768px) {
+   .height{
+       height: 70vh;
+   }
+   .item_1{
+    width:100%;
+    height:65vh;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+   .item_2{
+    width:100%;
+    height:65vh;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+   .item_3{
+    width:100%;
+    height:65vh;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+}
